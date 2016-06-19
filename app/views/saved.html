@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h2 class="animated infinite pulse">Saved</h2>
+</div>
+
+<hr />
+
+<div deckgrid class="deckgrid" source="photos">
+  <div class="a-card">
+    <a ng-href="{{card.link}}" target="_blank">
+      <img src="" data-ng-src="{{card.src}}">
+    </a>
+    <div class="image-hover">
+      <button type="button" class="btn btn-default remove-button" aria-label="Right Align" ng-click="mother.removeItem(card.$index)">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+    </div>
+  </div>
+</div>
