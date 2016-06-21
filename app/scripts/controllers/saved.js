@@ -10,6 +10,8 @@
 angular.module('angularProjectsApp')
   .controller('SavedCtrl', function ($scope, $http) {
 
+    $scope.loggedIn = false; 
+
     $scope.removeItem = function(index){
       $scope.photos.splice(index,1);
     }
